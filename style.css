@@ -116,7 +116,7 @@ body{
     line-height: 6vh;
 }
 
-.hero-left>span{
+.hero-left>h4{
     font-weight: 600;
     text-transform: uppercase;
     color:red;
@@ -269,25 +269,9 @@ body{
     font-weight: 600;
     font-size: 1.1rem;
 }
-/* .cv>a>button:hover{
+.cv>a>button:hover{
     box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
 
-} */
-.cv>a>button:before{
-    content: "";
-    position:absolute;
-    bottom:0px;
-    left:0;
-    height:3px;
-    width:100%;
-    transition:0.3s;
-    transform: scaleX(0);
-    background-color: #ffffff;
-
-}
-
-.cv>a>button:hover:before{
-    transform: scaleX(1);
 }
 
 
@@ -299,7 +283,7 @@ body{
     /* background-color: blue; */
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /* boxes in btm of section 2 */
@@ -314,6 +298,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 1px 1px 5px 1px red;
+    margin: 0px 10px;
 }
 
 .gg>img{

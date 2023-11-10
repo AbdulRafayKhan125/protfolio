@@ -31,4 +31,145 @@ ScrollTrigger.refresh();
 
 }
 
+
+function animate(){
+
+  gsap .from('#nav',{
+    y:-100,
+    duration:1,
+    opacity:0
+  })
+
+  gsap.from('.hero-left>h4,.hero-left>h3,.hero-left>h1,.hero-left>h2,.contact',{
+    y:100,
+    stagger:0.2,
+    opacity:0
+
+  })
+  gsap.from('.hero-right>p',{
+    x:100,
+    opacity:0,
+    duration:1,
+  })
+  gsap.from('#icons>a',{
+    y:-200,
+    duration:1,
+    stagger:0.3,
+    opacity:0
+  })
+  gsap.from('.hero',{
+    scale:0.5,
+    duration:0.7
+  })
+
+ 
+
+  gsap.from('.profile-photo',{
+    x:-100,
+    duration:0.6,
+    opacity:0.5,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".profile-photo",
+      markers:true,
+      start:"top 60%",
+      scrub:true,
+    }
+  })
+
+  gsap.from('.para',{
+    x:100,
+    duration:0.6,
+    opacity:0.5,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".para",
+      markers:true,
+      start:"top 60%",
+      scrub:true,
+    }
+  })
+
+  gsap.from('.frameworks',{
+    x:-80,
+    duration:0.3,
+    opacity:0.5,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".frameworks",
+      start:"top 130%",
+      scrub:true
+    }
+    
+  })
+  gsap.from('.skills',{
+    y:80,
+    duration:0.3,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".skills",
+      markers:true,
+      start:"top 130%",
+      scrub:true
+    }
+    
+  })
+
+  gsap.from('.projects',{
+    x:100,
+    duration:0.3,
+    opacity:0.5,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".projects",
+      markers:true,
+      start:"top 130%",
+      scrub:true
+    }
+    
+  })
+
+  gsap.from('.head3',{
+    y:100,
+    opacity:0,
+    duration:0.3,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".head3",
+      start:"top 90%",
+      scrub:true,
+    }
+  })
+
+  gsap.from('.top3',{
+    y:100,
+    opacity:0,
+    duration:0.3,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".top3",
+      start:"top 90%",
+      scrub:true,
+    }
+  })
+  gsap.from('.btm3',{
+    y:100,
+    opacity:0.5,
+    duration:0.3,
+    scrollTrigger:{
+      scroller:"#main",
+      trigger:".btm3",
+      start:"top 90%",
+      scrub:true,
+    }
+  })
+
+
+}
+
+
+
+
+
 loco()
+animate()
