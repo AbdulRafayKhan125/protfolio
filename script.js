@@ -71,7 +71,6 @@ function animate(){
     scrollTrigger:{
       scroller:"#main",
       trigger:".profile-photo",
-      markers:true,
       start:"top 60%",
       scrub:true,
     }
@@ -84,7 +83,6 @@ function animate(){
     scrollTrigger:{
       scroller:"#main",
       trigger:".para",
-      markers:true,
       start:"top 60%",
       scrub:true,
     }
@@ -108,7 +106,6 @@ function animate(){
     scrollTrigger:{
       scroller:"#main",
       trigger:".skills",
-      markers:true,
       start:"top 130%",
       scrub:true
     }
@@ -122,7 +119,6 @@ function animate(){
     scrollTrigger:{
       scroller:"#main",
       trigger:".projects",
-      markers:true,
       start:"top 130%",
       scrub:true
     }
