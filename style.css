@@ -470,7 +470,9 @@ body{
 }
 
 #mobile>h1{
-    color:red
+    color:rgb(255, 255, 255);
+    height:0px;
+    width:0px;
 }
 
 @media (max-width:900px){
