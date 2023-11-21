@@ -32,6 +32,20 @@ ScrollTrigger.refresh();
 }
 
 
+function mousefollower(){
+  var circle = document.querySelector("#circle");
+
+  window.addEventListener("mousemove", function(dets){
+    gsap.to(circle,{
+      x: dets.clientX,
+      y: dets.clientY,
+      duration:0.6,
+      
+    })
+  })
+}
+
+
 function animate(){
 
   gsap .from('#nav',{
@@ -72,6 +86,7 @@ function animate(){
       scroller:"#main",
       trigger:".profile-photo",
       start:"top 60%",
+      end:"bottom 20%",
       scrub:true,
     }
   })
@@ -90,6 +105,7 @@ function animate(){
 
   gsap.from('.frameworks',{
     x:-80,
+    scale:0.7,
     duration:0.3,
     opacity:0.5,
     scrollTrigger:{
@@ -102,6 +118,7 @@ function animate(){
   })
   gsap.from('.skills',{
     y:80,
+    scale:0.7,
     duration:0.3,
     scrollTrigger:{
       scroller:"#main",
@@ -113,7 +130,8 @@ function animate(){
   })
 
   gsap.from('.projects',{
-    x:100,
+    x:100,  
+    scale:0.7,
     duration:0.3,
     opacity:0.5,
     scrollTrigger:{
@@ -169,3 +187,4 @@ function animate(){
 
 loco()
 animate()
+mousefollower()
